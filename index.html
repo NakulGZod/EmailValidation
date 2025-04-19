@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailValidator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+        <nav>
+            <div class="logo">
+                <img src="img/email.svg" alt="">
+                <h1>iValidate</h1></div>
+             <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/'>About</a></li>
+                <li><a href='/'>Contact</a></li>
+            </ul>
+        </nav>
+            
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Enter Your Email For Validation : </h1>
+            <form action="/submit" method="post">
+                <!--text input for email-->
+               
+                <input type="email" placeholder="Enter Your email to validate" id="email" name="email" size="35" class="inputbox" required>
+                <br><br>
+    
+                <!--Submit Button-->
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+    
+            </form>
+        </div>
+       <div class="container">
+        <h2>Your Results</h2>
+        <div id="resultCont">
+           
+        </div>
+       </div>
+    
+    </main>
+    <footer>
+        Copyright | iValidate.com | All right reserved
+    </footer>
+    <script src="JS/index.js"></script>
+</body>
+</html>
